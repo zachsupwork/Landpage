@@ -9,20 +9,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
       text-align: center;
     }
     .navbar {
       background: #333;
       color: #fff;
-      padding: 1rem 2rem;
+      padding: 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
     }
     .logo img {
       height: 50px;
@@ -38,37 +44,48 @@
     .navbar ul li a {
       color: #fff;
       text-decoration: none;
+      font-weight: 600;
     }
     .hero {
       background: linear-gradient(to right, #4facfe, #00f2fe);
       color: #fff;
-      padding: 5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 2rem;
     }
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      max-width: 800px;
       margin-bottom: 1rem;
     }
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      max-width: 800px;
       margin-bottom: 2rem;
     }
     .btn {
       background: #333;
       color: #fff;
-      padding: 0.8rem 2rem;
+      padding: 1rem 2rem;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 1.2rem;
     }
     .features, .pricing, .contact {
-      padding: 3rem 2rem;
+      padding: 5rem 2rem;
+      width: 100%;
     }
     .features h2, .pricing h2, .contact h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 2rem;
     }
     .feature-grid {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 2rem;
     }
     .feature {
@@ -76,6 +93,8 @@
       padding: 2rem;
       border-radius: 10px;
       flex: 1;
+      min-width: 280px;
+      max-width: 400px;
     }
     .feature i {
       font-size: 2rem;
@@ -85,6 +104,7 @@
     .pricing-grid {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 2rem;
     }
     .pricing-card {
@@ -97,8 +117,7 @@
     }
     .contact iframe {
       width: 100%;
-      max-width: 600px;
-      height: 600px;
+      height: 100vh;
       border: none;
     }
     .footer {
@@ -122,7 +141,7 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Full-Screen) -->
   <section class="hero">
     <h1>Transform Customer Engagement with AI</h1>
     <p>AI-powered voice and text CRM for web and phone to streamline communication and boost productivity.</p>
@@ -170,7 +189,7 @@
     </div>
   </section>
 
-  <!-- Contact & Calendly Booking -->
+  <!-- Contact & Calendly Booking (Full-Screen) -->
   <section class="contact" id="contact">
     <h2>Book a Demo with Us</h2>
     <p>Schedule a free consultation to see how our AI-powered CRM can help your business.</p>

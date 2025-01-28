@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Voice & Text CRM Platform</title>
+  <title>AI Voice & Text CRM</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      text-align: center;
     }
     .navbar {
       background: #333;
@@ -23,9 +24,8 @@
       justify-content: space-between;
       align-items: center;
     }
-    .navbar .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
+    .logo img {
+      height: 50px;
     }
     .navbar ul {
       list-style: none;
@@ -40,7 +40,6 @@
       text-decoration: none;
     }
     .hero {
-      text-align: center;
       background: linear-gradient(to right, #4facfe, #00f2fe);
       color: #fff;
       padding: 5rem 2rem;
@@ -53,53 +52,42 @@
       font-size: 1.2rem;
       margin-bottom: 2rem;
     }
-    .hero .btn {
+    .btn {
       background: #333;
       color: #fff;
       padding: 0.8rem 2rem;
       text-decoration: none;
       border-radius: 5px;
     }
-    .features {
+    .features, .pricing, .contact {
       padding: 3rem 2rem;
-      text-align: center;
     }
-    .features h2 {
+    .features h2, .pricing h2, .contact h2 {
       font-size: 2rem;
       margin-bottom: 2rem;
     }
-    .features .feature-grid {
-      display: flex;
-      justify-content: space-around;
-      gap: 2rem;
-    }
-    .features .feature {
-      background: #f4f4f4;
-      padding: 2rem;
-      border-radius: 10px;
-      text-align: center;
-      flex: 1;
-    }
-    .features .feature i {
-      font-size: 2rem;
-      color: #4facfe;
-      margin-bottom: 1rem;
-    }
-    .pricing {
-      padding: 3rem 2rem;
-      background: #f9f9f9;
-      text-align: center;
-    }
-    .pricing h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    .pricing .pricing-grid {
+    .feature-grid {
       display: flex;
       justify-content: center;
       gap: 2rem;
     }
-    .pricing .pricing-card {
+    .feature {
+      background: #f4f4f4;
+      padding: 2rem;
+      border-radius: 10px;
+      flex: 1;
+    }
+    .feature i {
+      font-size: 2rem;
+      color: #4facfe;
+      margin-bottom: 1rem;
+    }
+    .pricing-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .pricing-card {
       background: #fff;
       padding: 2rem;
       border: 1px solid #ddd;
@@ -107,28 +95,16 @@
       text-align: center;
       width: 300px;
     }
-    .pricing .pricing-card h3 {
-      margin-bottom: 1rem;
-    }
-    .pricing .pricing-card p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    .pricing .pricing-card .btn {
-      background: #4facfe;
-      color: #fff;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
+    .contact iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 600px;
+      border: none;
     }
     .footer {
       background: #333;
       color: #fff;
       padding: 2rem 1rem;
-      text-align: center;
-    }
-    .footer p {
-      margin: 0;
     }
   </style>
 </head>
@@ -136,7 +112,9 @@
 
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">AI CRM Platform</div>
+    <div class="logo">
+      <img src="file-X68cMcrGjFtkjv9Lj7qSiE" alt="AI CRM Logo">
+    </div>
     <ul>
       <li><a href="#features">Features</a></li>
       <li><a href="#pricing">Pricing</a></li>
@@ -147,7 +125,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <h1>Transform Customer Engagement with AI</h1>
-    <p>Leverage AI-powered voice and text solutions for phone and web to streamline communication and boost productivity.</p>
+    <p>AI-powered voice and text CRM for web and phone to streamline communication and boost productivity.</p>
     <a href="#pricing" class="btn">Get Started</a>
   </section>
 
@@ -190,6 +168,13 @@
         <a href="#" class="btn">Upgrade</a>
       </div>
     </div>
+  </section>
+
+  <!-- Contact & Calendly Booking -->
+  <section class="contact" id="contact">
+    <h2>Book a Demo with Us</h2>
+    <p>Schedule a free consultation to see how our AI-powered CRM can help your business.</p>
+    <iframe src="https://calendly.com/booking-appointments-calendly/booking-appointments-discussion"></iframe>
   </section>
 
   <!-- Footer -->

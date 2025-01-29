@@ -226,14 +226,14 @@
     <div class="plans-grid">
       <div class="plans-card">
         <h3>Starter</h3>
-        <p>Perfect for small businesses and startups looking to automate basic customer interactions.</p>
-        <p>Includes AI chat, basic workflow automation, and appointment scheduling.</p>
+        <p>•Perfect for small businesses and startups looking to automate basic customer interactions.</p>
+        <p>•Includes AI chat, basic workflow automation, and appointment scheduling.</p>
         <a href="#contact" class="btn">Request Demo</a>
       </div>
       <div class="plans-card">
         <h3>Pro</h3>
-        <p>Designed for growing businesses that need advanced AI-powered automation and integrations.</p>
-        <p>Includes AI voice, multi-channel messaging, CRM integrations, and advanced workflow automation.</p>
+        <p>•Designed for growing businesses that need advanced AI-powered automation and integrations.</p>
+        <p>•Includes AI voice, multi-channel messaging, CRM integrations, and advanced workflow automation.</p>
         <a href="#contact" class="btn">Request Demo</a>
       </div>
     </div>
@@ -251,12 +251,35 @@
 
     <br><br>
 
-    <!-- Google Form Contact -->
-    <div class="google-form-container">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejJyfxMCB-Rizt2voyAOYG7n5C3Vb4MbC4OFOyWIqIzgYGIA/viewform?embedded=true"></iframe>
-    </div>
-  </section>
-  <!-- Footer -->
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js'></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    window.AgentInitializer.init({
+      agentRenderURL: "https://agent.jotform.com/0194b398e40878fdbfa656caa7d0e0e89aa1",
+      rootId: "JotformAgent-0194b398e40878fdbfa656caa7d0e0e89aa1",
+      formID: "0194b398e40878fdbfa656caa7d0e0e89aa1",
+      queryParams: ["skipWelcome=1", "maximizable=1"],
+      domain: "https://www.jotform.com",
+      isInitialOpen: false,
+      isDraggable: false,
+      background: "linear-gradient(180deg, #C8CEED 0%, #C8CEED 100%)",
+      buttonBackgroundColor: "#0a1551",
+      buttonIconColor: "#fff",
+      variant: false,
+      customizations: {
+        "greeting": "Yes",
+        "greetingMessage": "Hi! How can I assist you?",
+        "openByDefault": "No",
+        "pulse": "Yes",
+        "position": "right"
+      },
+      isVoice: false
+    });
+  });
+</script>
+
+</body>
+<!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 AI CRM Access. All Rights Reserved.</p>
     <p>
@@ -264,22 +287,6 @@
       <a href="https://terms-and-conditions-aicrm.vercel.app/" target="_blank">Terms & Conditions</a>
     </p>
   </footer>
-
-  <!-- Landbot Widget -->
-  <script>
-    window.addEventListener('mouseover', initLandbot, { once: true });
-    window.addEventListener('touchstart', initLandbot, { once: true });
-    function initLandbot() {
-      var s = document.createElement('script');
-      s.type = "module";
-      s.async = true;
-      s.onload = function() {
-        new Landbot.Livechat({ configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2765658-TUEBYVSJCGAPRYZ9/index.json' });
-      };
-      s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
-      document.body.appendChild(s);
-    }
-  </script>
-
-</body>
 </html>
+
+

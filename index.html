@@ -114,11 +114,56 @@
       border-radius: 10px;
       text-align: center;
       width: 300px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .pricing-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .pricing-card p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .pricing-card .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #4facfe;
+      color: #fff;
     }
     .contact iframe {
       width: 100%;
       height: 100vh;
       border: none;
+    }
+    .contact-form {
+      background: #f9f9f9;
+      padding: 3rem;
+      text-align: center;
+    }
+    .contact-form form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background: #4facfe;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
     }
     .footer {
       background: #333;
@@ -137,11 +182,11 @@
     <ul>
       <li><a href="#features">Features</a></li>
       <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact-form">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section (Full-Screen) -->
+  <!-- Hero Section -->
   <section class="hero">
     <h1>Transform Customer Engagement with AI</h1>
     <p>AI-powered voice and text CRM for web and phone to streamline communication and boost productivity.</p>
@@ -178,22 +223,25 @@
         <h3>Starter</h3>
         <p>$0/month</p>
         <p>Basic AI messaging and voice solutions.</p>
-        <a href="#" class="btn">Get Started</a>
+        <a href="#contact-form" class="btn">Request Demo</a>
       </div>
       <div class="pricing-card">
         <h3>Pro</h3>
         <p>$49/month</p>
         <p>Advanced AI tools with CRM integration.</p>
-        <a href="#" class="btn">Upgrade</a>
+        <a href="#contact-form" class="btn">Request Demo</a>
       </div>
     </div>
   </section>
 
-  <!-- Contact & Calendly Booking (Full-Screen) -->
-  <section class="contact" id="contact">
-    <h2>Book a Demo with Us</h2>
-    <p>Schedule a free consultation to see how our AI-powered CRM can help your business.</p>
-    <iframe src="https://calendly.com/booking-appointments-calendly/booking-appointments-discussion"></iframe>
+  <!-- Contact Form -->
+  <section class="contact-form" id="contact-form">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xzzdrney" method="POST">
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <!-- Footer -->

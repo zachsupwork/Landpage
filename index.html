@@ -138,7 +138,7 @@
     .iframe-container {
       position: relative;
       width: 100%;
-      max-width: 800px;
+      max-width: 900px;
       height: 700px;
       margin: 0 auto;
       border-radius: 8px;
@@ -149,14 +149,22 @@
       height: 100%;
       border: none;
     }
-    @media (max-width: 768px) {
-      .iframe-container {
-        height: 600px;
-      }
+    .google-form-container {
+      width: 100%;
+      max-width: 900px;
+      height: 1800px; /* Adjust height to fit Google Form properly */
+      margin: 0 auto;
+      border-radius: 8px;
+      overflow: hidden;
     }
-    @media (max-width: 480px) {
-      .iframe-container {
-        height: 500px;
+    .google-form-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    @media (max-width: 768px) {
+      .iframe-container, .google-form-container {
+        height: auto;
       }
     }
     .footer {
@@ -194,24 +202,21 @@
     <a href="#pricing" class="btn">Get Started</a>
   </section>
 
-  <!-- Features Section -->
-  <section class="features" id="features">
-    <h2>Key Features</h2>
-    <div class="feature-grid">
-      <div class="feature">
-        <i class="fas fa-microphone-alt"></i>
-        <h3>AI Voice Assistant</h3>
-        <p>Handle customer calls with AI-powered voice automation.</p>
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Starter</h3>
+        <p>$0/month</p>
+        <p>Basic AI messaging and voice solutions.</p>
+        <a href="#contact" class="btn">Request Demo</a>
       </div>
-      <div class="feature">
-        <i class="fas fa-comments"></i>
-        <h3>AI Text Messaging</h3>
-        <p>Send personalized texts and automate chat responses.</p>
-      </div>
-      <div class="feature">
-        <i class="fas fa-chart-line"></i>
-        <h3>CRM Integration</h3>
-        <p>Connect AI communication with your existing CRM tools.</p>
+      <div class="pricing-card">
+        <h3>Pro</h3>
+        <p>$49/month</p>
+        <p>Advanced AI tools with CRM integration.</p>
+        <a href="#contact" class="btn">Request Demo</a>
       </div>
     </div>
   </section>
@@ -229,7 +234,7 @@
     <br><br>
 
     <!-- Google Form Contact -->
-    <div class="iframe-container" style="height: 1640px;">
+    <div class="google-form-container">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejJyfxMCB-Rizt2voyAOYG7n5C3Vb4MbC4OFOyWIqIzgYGIA/viewform?embedded=true"></iframe>
     </div>
   </section>

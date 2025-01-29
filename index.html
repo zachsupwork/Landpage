@@ -3,173 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Voice & Text CRM</title>
+  <title>AI CRM Access | Smart AI-Powered CRM</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
-    }
-    .navbar {
-      background: #333;
-      color: #fff;
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-    .logo img {
-      height: 50px;
-    }
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-    .navbar ul li {
-      display: inline;
-    }
-    .navbar ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .hero {
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      padding: 2rem;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      max-width: 800px;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.5rem;
-      max-width: 800px;
-      margin-bottom: 2rem;
-    }
-    .btn {
-      background: #333;
-      color: #fff;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
-    }
-    .features, .pricing, .contact {
-      padding: 5rem 2rem;
-      width: 100%;
-    }
-    .features h2, .pricing h2, .contact h2 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-    }
-    .feature-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    .feature {
-      background: #f4f4f4;
-      padding: 2rem;
-      border-radius: 10px;
-      flex: 1;
-      min-width: 280px;
-      max-width: 400px;
-    }
-    .feature i {
-      font-size: 2rem;
-      color: #4facfe;
-      margin-bottom: 1rem;
-    }
-    .pricing-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    .pricing-card {
-      background: #fff;
-      padding: 2rem;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      text-align: center;
-      width: 300px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .pricing-card h3 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .pricing-card p {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .pricing-card .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      background: #4facfe;
-      color: #fff;
-    }
-    .contact {
-      background: #f9f9f9;
-      padding: 3rem;
-      text-align: center;
-    }
-    .iframe-container, .google-form-container {
-      position: relative;
-      width: 100%;
-      max-width: 1200px;
-      height: 950px; /* Increased height to prevent scrolling */
-      margin: 0 auto;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    .iframe-container iframe, .google-form-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .footer {
-      background: #333;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .footer a {
-      color: #4facfe;
-      text-decoration: none;
-      font-weight: 600;
-      margin: 0 10px;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; text-align: center; }
+    .navbar { background: #333; color: #fff; padding: 1rem; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; }
+    .logo img { height: 50px; }
+    .navbar ul { list-style: none; display: flex; gap: 1rem; }
+    .navbar ul li { display: inline; }
+    .navbar ul li a { color: #fff; text-decoration: none; font-weight: 600; }
+    .hero { background: linear-gradient(to right, #4facfe, #00f2fe); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; padding: 2rem; }
+    .hero h1 { font-size: 3rem; max-width: 800px; margin-bottom: 1rem; }
+    .hero p { font-size: 1.5rem; max-width: 800px; margin-bottom: 2rem; }
+    .btn { background: #333; color: #fff; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-size: 1.2rem; }
+    .features, .pricing, .contact { padding: 5rem 2rem; width: 100%; }
+    .features h2, .pricing h2, .contact h2 { font-size: 2.5rem; margin-bottom: 2rem; }
+    .feature-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; }
+    .feature { background: #f4f4f4; padding: 2rem; border-radius: 10px; flex: 1; min-width: 280px; max-width: 400px; }
+    .feature i { font-size: 2rem; color: #4facfe; margin-bottom: 1rem; }
+    .pricing-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; }
+    .pricing-card { background: #fff; padding: 2rem; border: 1px solid #ddd; border-radius: 10px; text-align: center; width: 300px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+    .pricing-card h3 { font-size: 1.8rem; margin-bottom: 1rem; }
+    .pricing-card p { font-size: 1.2rem; margin-bottom: 1rem; }
+    .pricing-card .btn { display: inline-block; margin-top: 1rem; background: #4facfe; color: #fff; }
+    .contact { background: #f9f9f9; padding: 3rem; text-align: center; }
+    .iframe-container, .google-form-container { position: relative; width: 100%; max-width: 1200px; height: 950px; margin: 0 auto; border-radius: 8px; overflow: hidden; }
+    .iframe-container iframe, .google-form-container iframe { width: 100%; height: 100%; border: none; }
+    .footer { background: #333; color: #fff; padding: 2rem 1rem; text-align: center; }
+    .footer a { color: #4facfe; text-decoration: none; font-weight: 600; margin: 0 10px; }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">
-      <img src="file-X68cMcrGjFtkjv9Lj7qSiE.webp" alt="AI CRM Logo">
-    </div>
+    <div class="logo"><img src="file-X68cMcrGjFtkjv9Lj7qSiE.webp" alt="AI CRM Logo"></div>
     <ul>
       <li><a href="#features">Features</a></li>
       <li><a href="#pricing">Pricing</a></li>
@@ -179,8 +51,8 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Transform Customer Engagement with AI</h1>
-    <p>AI-powered voice and text CRM for web and phone to streamline communication and boost productivity.</p>
+    <h1>AI-Powered CRM for Seamless Communication</h1>
+    <p>Enhance customer engagement, automate workflows, and manage interactions with AI-driven solutions.</p>
     <a href="#pricing" class="btn">Get Started</a>
   </section>
 
@@ -189,19 +61,19 @@
     <h2>Key Features</h2>
     <div class="feature-grid">
       <div class="feature">
-        <i class="fas fa-microphone-alt"></i>
-        <h3>AI Voice Assistant</h3>
-        <p>Handle customer calls with AI-powered voice automation.</p>
+        <i class="fas fa-comments"></i>
+        <h3>Conversational AI</h3>
+        <p>AI chatbots and voice assistants automate customer interactions across web, phone, and email.</p>
       </div>
       <div class="feature">
-        <i class="fas fa-comments"></i>
-        <h3>AI Text Messaging</h3>
-        <p>Send personalized texts and automate chat responses.</p>
+        <i class="fas fa-calendar-check"></i>
+        <h3>Booking & Scheduling</h3>
+        <p>AI-powered appointment management integrated with calendar platforms.</p>
       </div>
       <div class="feature">
         <i class="fas fa-chart-line"></i>
-        <h3>CRM Integration</h3>
-        <p>Connect AI communication with your existing CRM tools.</p>
+        <h3>Workflow Automation</h3>
+        <p>Automate routine tasks, document management, and customer communications.</p>
       </div>
     </div>
   </section>

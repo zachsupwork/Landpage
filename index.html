@@ -305,19 +305,20 @@
 </footer>
 
 <style>
+  /* Ensure footer extends fully */
   .footer { 
     background: #333; 
     color: #fff; 
     padding: 2rem; 
     text-align: center; 
-    width: 100%; 
-    position: relative; 
+    width: 100vw;  /* Ensures full viewport width */
+    position: absolute; 
     left: 0; 
-    bottom: 0; 
   }
 
+  /* Center content properly */
   .footer-content {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
